@@ -1,0 +1,20 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+	<url-mapping id="jogadores-pesquisa">
+		<pattern value="/jogadores" />
+		<view-id value="jogadores.pesquisa.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="jogador-index">
+		<pattern value="/jogadores/#{id}" />
+		<view-id value="/jogador.index.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="jogador-edicao">
+		<pattern value="/jogadores/#{id}/edicao" />
+		<view-id value="/jogador.edicao.xhtml" />
+	</url-mapping>
+</pretty-config>
