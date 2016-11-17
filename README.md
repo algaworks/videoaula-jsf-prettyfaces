@@ -4,7 +4,7 @@ Código referente a vídeo aula de conteúdo gravada para AlgaWorks.
 
 Saiba mais em:
 
-http://blog.algaworks.com
+http://blog.algaworks.com/prettyfaces
 
 ### Rodando o projeto 
 
