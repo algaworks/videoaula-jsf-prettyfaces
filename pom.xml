@@ -10,9 +10,9 @@
 
 	<name>videoaula-jsf-prettyfaces</name>
 
-	<url>http://algaworks.com</url>
+	<url>http://blog.algaworks.com/prettyfaces</url>
 
-	<dependencies>	
+	<dependencies>
 		<dependency>
 			<groupId>org.ocpsoft.rewrite</groupId>
 			<artifactId>rewrite-servlet</artifactId>
@@ -24,7 +24,7 @@
 			<artifactId>rewrite-config-prettyfaces</artifactId>
 			<version>3.4.1.Final</version>
 		</dependency>
-			
+		
 		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.faces</artifactId>
@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>jquery</artifactId>
-			<version>2.1.1</version>
+			<version>1.12.4</version>
 		</dependency>
 
 		<dependency>
@@ -81,7 +81,7 @@
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.2.11.v20150529</version>
 				<configuration>
-					<scanIntervalSeconds>5</scanIntervalSeconds>
+					<scanIntervalSeconds>2</scanIntervalSeconds>
 					<webApp>
 						<contextPath>/rachinha</contextPath>
 					</webApp>

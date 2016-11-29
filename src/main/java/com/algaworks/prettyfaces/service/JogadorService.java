@@ -1,7 +1,9 @@
-package com.algaworks.exemplos.jsf.prettyfaces;
+package com.algaworks.prettyfaces.service;
 
 import java.util.Arrays;
 import java.util.List;
+
+import com.algaworks.prettyfaces.model.Jogador;
 
 public class JogadorService {
 	

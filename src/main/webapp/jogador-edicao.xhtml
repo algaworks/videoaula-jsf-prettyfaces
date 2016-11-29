@@ -6,11 +6,13 @@
 	xmlns:jsf="http://xmlns.jcp.org/jsf">
 
 <ui:composition template="/layout.xhtml">
+	<!-- 
 	<f:metadata>
 		<f:viewParam name="id" value="#{jogadorEdicaoBean.jogador.id}" />
 
 		<f:viewAction action="#{jogadorEdicaoBean.buscar}" />
 	</f:metadata>
+	-->
 
 	<ui:define name="head">	
 		Edição
@@ -40,15 +42,6 @@
 					<span class="fa fa-save"></span> Salvar
 				</button>
 
-				<!-- 
-				<h:outputLink styleClass="btn btn-default"
-					value="/rachinha/jogadores/#{jogadorEdicaoBean.jogador.id}"
-					style="margin-left: 10px">
-					<span class="fa fa-arrow-left"></span>					
-					Voltar
-				</h:outputLink>
-				-->
-				
 				<h:link styleClass="btn btn-default"
 					outcome="pretty:jogador-index"
 					style="margin-left: 10px">

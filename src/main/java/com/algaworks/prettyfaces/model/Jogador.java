@@ -1,4 +1,4 @@
-package com.algaworks.exemplos.jsf.prettyfaces;
+package com.algaworks.prettyfaces.model;
 
 import java.io.Serializable;
 

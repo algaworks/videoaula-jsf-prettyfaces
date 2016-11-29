@@ -5,16 +5,19 @@
 
 	<url-mapping id="jogadores-pesquisa">
 		<pattern value="/jogadores" />
-		<view-id value="jogadores.pesquisa.xhtml" />
+		<view-id value="/jogadores-pesquisa.xhtml" />
 	</url-mapping>
 
 	<url-mapping id="jogador-index">
 		<pattern value="/jogadores/#{id}" />
-		<view-id value="/jogador.index.xhtml" />
+		<view-id value="/jogador-index.xhtml" />
 	</url-mapping>
 
+	<!-- 
 	<url-mapping id="jogador-edicao">
-		<pattern value="/jogadores/#{id}/edicao" />
-		<view-id value="/jogador.edicao.xhtml" />
+		<pattern value="/jogadores/#{id: jogadorEdicaoBean.jogador.id}/edicao" />
+		<view-id value="/jogador-edicao.xhtml" />	
+		<action onPostback="false">#{jogadorEdicaoBean.buscar}</action>	
 	</url-mapping>
+	-->
 </pretty-config>
