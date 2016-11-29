@@ -40,12 +40,22 @@
 					<span class="fa fa-save"></span> Salvar
 				</button>
 
+				<!-- 
 				<h:outputLink styleClass="btn btn-default"
 					value="/rachinha/jogadores/#{jogadorEdicaoBean.jogador.id}"
 					style="margin-left: 10px">
 					<span class="fa fa-arrow-left"></span>					
 					Voltar
 				</h:outputLink>
+				-->
+				
+				<h:link styleClass="btn btn-default"
+					outcome="pretty:jogador-index"
+					style="margin-left: 10px">
+					<f:param name="id" value="#{jogadorEdicaoBean.jogador.id}" />
+					<span class="fa fa-arrow-left"></span>					
+					Voltar
+				</h:link>
 			</div>
 		</h:form>
 	</ui:define>

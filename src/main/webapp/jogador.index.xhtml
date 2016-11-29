@@ -41,19 +41,38 @@
 			</div>
 
 			<div class="form-group">
+				<!-- 
 				<h:outputLink styleClass="btn btn-default"
 					value="/rachinha/jogadores/#{jogadorEdicaoBean.jogador.id}/edicao">
 					<span class="fa fa-edit"></span>
 					
 					Editar
 				</h:outputLink>
+				-->
+				
+				<h:link styleClass="btn btn-default"
+					outcome="pretty:jogador-edicao">
+					<f:param name="id" value="#{jogadorEdicaoBean.jogador.id}" />
+					<span class="fa fa-edit"></span>
+					
+					Editar
+				</h:link>
 
+				<!-- 
 				<h:outputLink styleClass="btn btn-default"
 					value="/rachinha/jogadores" style="margin-left: 10px">
 					<span class="fa fa-arrow-left"></span>
 					
 					Voltar
 				</h:outputLink>
+				-->
+				
+				<h:link styleClass="btn btn-default"
+					outcome="pretty:jogadores-pesquisa" style="margin-left: 10px">
+					<span class="fa fa-arrow-left"></span>
+					
+					Voltar
+				</h:link>
 			</div>
 		</h:form>
 	</ui:define>
